@@ -28,21 +28,6 @@ const validateNotesDescProjId = (req, res, next) => {
     }
 }
 
-// const validateActionId = (req, res, next) => {
-//     Actions.get(req.params.id)
-//         .then(action => {
-//             if(!action){
-//                 next({
-//                     status: 404
-//                 })
-//             } else {
-//                 next()
-//             }
-//         })
-//         .catch(next)
-// }
-
-
 module.exports = {
     validateActionId,
     validateNotesDescProjId
