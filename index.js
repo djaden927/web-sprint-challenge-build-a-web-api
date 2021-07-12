@@ -1,3 +1,12 @@
+require('dotenv')
+const server = require('./api/server.js')
+
+const PORT = process.env.port || 5000
+
+server.listen(PORT, () => {
+    console.log(`I am listening at ${PORT}`)
+})
+
 /*
 play this: https://www.youtube.com/watch?v=d-diB65scQU
 
